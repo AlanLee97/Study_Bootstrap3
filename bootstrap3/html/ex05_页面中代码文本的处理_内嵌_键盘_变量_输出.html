@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../bootstrap3/css/bootstrap.css">
+<script src="../bootstrap3/js/jquery-3.3.1.min.js"></script>
+<script src="../bootstrap3/js/bootstrap.min.js"></script>
+<title>页面中代码文本的处理:内嵌/键盘/变量/输出</title>
+</head>
+
+<body>
+	
+	
+	<h3>代码</h3>
+<h4>1.内联代码</h4>
+<code>通过 &lt;code&gt; 标签包裹内联样式的代码片段。</code>
+
+
+例如, <code>&lt;section&gt;</code>
+
+<h4>2.用户输入</h4>
+通过 <code>&lt;kbd&gt;</code> 标签标记用户通过键盘输入的内容。
+请从键盘输入<kbd>CTRL + C</kbd>
+
+<h4>3.代码块</h4>
+
+多行代码可以使用 <code>&lt;pre&gt;</code> 标签。为了正确的展示代码，注意将尖括号做转义处理。
+<pre>&lt;p&gt;文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本&lt;/p&gt;</pre>
+<br>
+还可以使用 .pre-scrollable 类，其作用是设置 max-height 为 350px ，并在垂直方向展示滚动条。
+<pre class="pre-scrollable">
+<code>&lt;p&gt;</code>文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本<code>&lt;/p&gt;</code></pre>
+
+	
+<h4>4.变量</h4>
+
+	通过 <code>&lt;var&gt;</code> 标签标记变量。
+
+<var>y = mx + b</var>
+
+
+<h4>5.程序输出</h4>
+	通过 <code>&lt;samp&gt;</code> 标签来标记程序输出的内容。
+
+此文本将被视为来自计算机程序的示例输出。
+
+<samp>此文本将被视为来自计算机程序的示例输出。</samp>
+</body>
+</html>
